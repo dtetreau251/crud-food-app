@@ -12,8 +12,8 @@ var app = new function() {
       for (i = 0; i < this.categories.length; i++) {
         data += '<tr>';
         data += '<td>'+(i+1)+". " + this.categories[i] + '</td>';
-        data += '<td><button onclick="app.Edit(' + i + ')"  class="btn btn-warning">Edit</button></td>';
-        data += '<td><button onclick="app.Delete(' + i + ')"  class="btn btn-danger">Delete</button></td>';
+        data += '<td><button onclick="app.Edit(' + i + ')"  class="edit-button">Edit</button></td>';
+        data += '<td><button onclick="app.Delete(' + i + ')"  class="delete-button">Delete</button></td>';
         data += '</tr>';
       }
     }
@@ -23,7 +23,7 @@ var app = new function() {
   };
 
   this.Add = function () {
-    el = document.getElementById('add-categories');
+    el = document.querySelector('.add-categories');
     // Get the value
     var category = el.value;
 
