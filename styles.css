@@ -33,9 +33,10 @@
 
 .add-categories {
     height: 50px;
-    width: 70%;
+    width: 50%;
     background-color: white;
     font-size: 16px;
+    text-indent: 10px;
 }
 
 input[type='submit'],
@@ -62,19 +63,13 @@ button,
 }
 
 .categories {
-    margin-top: 15%;
-    text-align: center;
+    margin: 15% auto;
 }
 
 .food-table {
-    text-align: left;
     color: white;
-    width: 80%;
-    text-align: center;
-}
-
-.food-table-header {
-    text-align: left;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .add-food {
