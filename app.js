@@ -27,8 +27,10 @@ var app = new function() {
     // Get the value
     var category = el.value;
 
-    if(category === "English" || category === "english" || category === "ENGLISH" || category === "British" || category === "BRITISH" || category === "british") {
-        category = "Error! This is the worst food ever. Please Remove it!"
+    
+    if(category.conatins("English") === true || category.contains("english") === true || category.contains("ENGLISH") === true || category.seach("British") === true || category.contains("BRITISH") === true || category.contains("british") === true) {
+        alert("Error! This is the worst food ever.");
+        return;
     }
 
     if (category) {
