@@ -3,8 +3,6 @@ var app = new function() {
 
   this.categories = [];
 
-  
-  
   this.FetchAll = function() {
     var data = '';
 
@@ -27,8 +25,7 @@ var app = new function() {
     // Get the value
     var category = el.value;
 
-    
-    if(category.conatins("English") === true || category.contains("english") === true || category.contains("ENGLISH") === true || category.seach("British") === true || category.contains("BRITISH") === true || category.contains("british") === true) {
+    if(category.indexOf("English") > -1 || category.indexOf("english") > -1 || category.indexOf("ENGLISH") > -1 || category.indexOf("British") > -1 || category.indexOf("BRITISH") > -1 || category.indexOf("british") > -1) {
         alert("Error! This is the worst food ever.");
         return;
     }
